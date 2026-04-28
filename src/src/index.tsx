@@ -1,19 +1,23 @@
-import React from "react";
 import { registerRoot, Composition } from "remotion";
+import { Video } from "./Video";
 import sceneData from "../data/sceneData.json";
-import { Video, getTotalDuration } from "./Video";
 
-const Root: React.FC = () => {
+const totalDurationInFrames = sceneData.scenes.reduce(
+  (total, scene) => total + scene.durationInFrames,
+  0
+);
+
+const RemotionRoot: React.FC = () => {
   return (
     <Composition
       id="VideoPrincipal"
       component={Video}
-      durationInFrames={getTotalDuration()}
-      fps={sceneData.video.fps}
-      width={sceneData.video.width}
-      height={sceneData.video.height}
+      durationInFrames={totalDurationInFrames}
+      fps={sceneData.fps}
+      width={sceneData.width}
+      height={sceneData.height}
     />
   );
 };
 
-registerRoot(Root);
+registerRoot(RemotionRoot);
