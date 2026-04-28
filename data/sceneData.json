@@ -1,0 +1,39 @@
+{
+  "video": {
+    "id": "VideoPrincipal",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "abertura",
+      "title": "Botafogo: o Glorioso em preto e branco",
+      "subtitle": "Uma camisa, uma estrela e uma história que atravessa gerações.",
+      "body": "No futebol brasileiro, tem clube que joga. E tem clube que vira cinema.",
+      "bullets": ["A Estrela Solitária está acesa."],
+      "durationInFrames": 180,
+      "backgroundColor": "#070707",
+      "textColor": "#ffffff",
+      "accentColor": "#d4af37",
+      "imagePrompt": "Ilustração cinematográfica de uma estrela solitária brilhando sobre um estádio em preto e branco, atmosfera épica, estilo jornal esportivo vintage moderno, sem logos reais.",
+      "imageUrl": "",
+      "animation": {
+        "fadeIn": 20,
+        "fadeOut": 18,
+        "slideDirection": "up",
+        "zoom": 1.04,
+        "delay": 0,
+        "duration": 180,
+        "easing": "easeOut"
+      },
+      "transition": "fade",
+      "layout": "hero"
+    },
+    {"id":"scene-2","type":"era-dos-craques","title":"Quando a Estrela virou constelação","subtitle":"Anos 50 e 60: talento em estado bruto.","body":"Garrincha, Nilton Santos, Didi, Quarentinha, Amarildo, Paulo Valentim e Zagallo fizeram do Botafogo uma máquina de futebol.","bullets":["Craque atrás de craque.","História atrás de história."],"durationInFrames":210,"backgroundColor":"#0e0e0e","textColor":"#f8f8f8","accentColor":"#c0c0c0","imagePrompt":"Composição visual com nomes lendários do futebol surgindo como manchetes antigas, fundo preto e branco, textura de jornal, luz dramática.","imageUrl":"","animation":{"fadeIn":15,"fadeOut":20,"slideDirection":"left","zoom":1.03,"delay":8,"duration":210,"easing":"spring"},"transition":"slide","layout":"manchetes"},
+    {"id":"scene-3","type":"idolos-eternos","title":"Garrincha e Nilton Santos","subtitle":"Drible, inteligência e futebol em estado de arte.","body":"Garrincha fez 612 jogos e marcou 245 gols pelo clube. Nilton Santos foi a Enciclopédia: bicampeão mundial e símbolo de elegância defensiva.","bullets":["Um desmontava marcações.","O outro ensinava o jogo."],"durationInFrames":210,"backgroundColor":"#111111","textColor":"#ffffff","accentColor":"#d4af37","imagePrompt":"Silhueta de jogador driblando sob holofotes, estética histórica do futebol brasileiro, contraste alto, preto e branco, clima épico.","imageUrl":"","animation":{"fadeIn":12,"fadeOut":20,"slideDirection":"none","zoom":1.06,"delay":0,"duration":210,"easing":"easeInOut"},"transition":"zoom","layout":"destaque"},
+    {"id":"scene-4","type":"momentos-marcantes","title":"Clássicos, taças e memória de arquibancada","subtitle":"Quando o Botafogo faz história, o futebol para para assistir.","body":"O clássico virou crônica, provocação e memória. Em General Severiano, o Botafogo fez 5 a 2 no Flamengo, e o episódio entrou para a história como o lendário Jogo do Senta.","bullets":["1944: Botafogo 5 x 2 Flamengo, o lendário Jogo do Senta.","Depois do quinto gol, jogadores do Flamengo sentaram no gramado.","1957: 6 a 2 no Fluminense e título carioca histórico.","1958 e 1962: base forte da Seleção campeã do mundo.","1995: campeão brasileiro.","2024: Libertadores e Brasileirão na mesma temporada."],"durationInFrames":240,"backgroundColor":"#0a0a0a","textColor":"#ffffff","accentColor":"#e03c31","imagePrompt":"Cena esportiva histórica estilizada em preto e branco, estádio antigo em General Severiano, placar 5 x 2, jogadores em silhueta sentados no gramado em protesto, estética de jornal esportivo vintage, drama cinematográfico, sem escudos oficiais, sem logos reais.","imageUrl":"","animation":{"fadeIn":10,"fadeOut":24,"slideDirection":"right","zoom":1.02,"delay":6,"duration":240,"easing":"easeOut"},"transition":"news","layout":"bullets"},
+    {"id":"scene-5","type":"encerramento","title":"Botafogo é roteiro de cinema","subtitle":"Drama, gênio, rivalidade e glória.","body":"Do Jogo do Senta à era Garrincha, da camisa da Seleção à Libertadores de 2024, o Glorioso mostra que tradição não envelhece: vira combustível.","bullets":["A Estrela Solitária segue acesa."],"durationInFrames":180,"backgroundColor":"#050505","textColor":"#ffffff","accentColor":"#d4af37","imagePrompt":"Estrela solitária iluminada no centro de um estádio lotado, atmosfera de vitória, preto branco e dourado, estilo cinematográfico.","imageUrl":"","animation":{"fadeIn":12,"fadeOut":30,"slideDirection":"up","zoom":1.05,"delay":0,"duration":180,"easing":"easeIn"},"transition":"fade","layout":"hero"}
+  ]
+}
