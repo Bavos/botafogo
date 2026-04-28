@@ -1,28 +1,8 @@
 {
-  "name": "botafogo-remotion-video",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Projeto Remotion em TypeScript para vídeo dinâmico do Botafogo com dados em JSON.",
   "scripts": {
-    "preview": "remotion preview src/index.ts",
-    "render": "remotion render src/index.ts VideoPrincipal out/video.mp4 --muted",
+    "preview": "remotion preview src/index.tsx",
+    "render": "remotion render src/index.tsx VideoPrincipal out/video.mp4",
     "build": "tsc --noEmit",
     "clean": "rm -rf out"
-  },
-  "dependencies": {
-    "@remotion/cli": "4.0.377",
-    "@remotion/renderer": "4.0.377",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "remotion": "4.0.377"
-  },
-  "devDependencies": {
-    "@types/node": "22.15.3",
-    "@types/react": "18.3.23",
-    "@types/react-dom": "18.3.7",
-    "typescript": "5.8.3"
-  },
-  "engines": {
-    "node": ">=20"
   }
 }
