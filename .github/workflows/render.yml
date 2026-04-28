@@ -2,21 +2,27 @@ name: Render Video
 
 on:
   push:
+    branches:
+      - main
     paths:
       - "data/sceneData.json"
       - "src/**"
       - "package.json"
       - "package-lock.json"
+      - "tsconfig.json"
+      - "remotion.config.ts"
       - ".github/workflows/render.yml"
-    tags:
-      - "v*"
+
   workflow_dispatch:
+
+  create:
 
 permissions:
   contents: write
 
 jobs:
   render:
+    if: github.event_name != 'create' || startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
 
     steps:
@@ -44,12 +50,7 @@ jobs:
           path: out/video.mp4
 
       - name: Upload MP4 to release
-        if: startsWith(github.ref, "refs/tags/v")
-        uses: softprops/action-gh-release@v2
-        with:
-          files: out/video.mp4
-      - name: Upload MP4 to release
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: ${{ startsWith(github.ref, 'refs/tags/v') }}
         uses: softprops/action-gh-release@v2
         with:
           files: out/video.mp4
