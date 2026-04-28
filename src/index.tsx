@@ -8,13 +8,16 @@ type SceneDataItem = {
 };
 
 type SceneData = {
-  fps: number;
-  width: number;
-  height: number;
+  video: {
+    id: string;
+    fps: number;
+    width: number;
+    height: number;
+  };
   scenes: SceneDataItem[];
 };
 
-const data = sceneData as SceneData;
+const data = sceneData as unknown as SceneData;
 
 const totalDurationInFrames = data.scenes.reduce(
   (total: number, scene: SceneDataItem) => total + scene.durationInFrames,
@@ -24,12 +27,12 @@ const totalDurationInFrames = data.scenes.reduce(
 const RemotionRoot: React.FC = () => {
   return (
     <Composition
-      id="VideoPrincipal"
+      id={data.video.id}
       component={Video}
       durationInFrames={totalDurationInFrames}
-      fps={data.fps}
-      width={data.width}
-      height={data.height}
+      fps={data.video.fps}
+      width={data.video.width}
+      height={data.video.height}
     />
   );
 };
