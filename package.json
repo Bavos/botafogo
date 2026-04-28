@@ -1,8 +1,6 @@
-{
-  "scripts": {
-    "preview": "remotion preview src/index.tsx",
-    "render": "remotion render src/index.tsx VideoPrincipal out/video.mp4",
-    "build": "tsc --noEmit",
-    "clean": "rm -rf out"
-  }
+"devDependencies": {
+  "@types/node": "^20.0.0",
+  "@types/react": "^18.2.0",
+  "@types/react-dom": "^18.2.0",
+  "typescript": "^5.0.0"
 }
